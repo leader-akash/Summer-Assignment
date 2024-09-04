@@ -12,7 +12,7 @@ import fLogo3 from "../assets/fLogo3.png";
 import fLogo4 from "../assets/fLogo4.png";
 import fLogo5 from "../assets/fLogo5.png";
 import fLogo6 from "../assets/fLogo6.png";
-import arrow from "../assets/vector.svg";
+import arrow from "../assets/Vector.svg";
 
 
 const SummerPrepSale = () => {

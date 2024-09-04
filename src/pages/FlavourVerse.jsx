@@ -1,13 +1,11 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
 import shellImg from "../assets/shell.png";
 import shell2 from "../assets/shell2.png";
-
 import ellipse from "../assets/Ellipse.png";
 import group from "../assets/box35.png";
-
-import food from "../assets/food.png";
-import { useState } from "react";
-import axios from "axios";
-import { useEffect } from "react";
+import leftCircle from "../assets/leftCircle.png";
+import rightCircle from "../assets/rightCircle.png";
 
 const FlavourVerse = () => {
   const [data, setData] = useState();
@@ -27,8 +25,8 @@ const FlavourVerse = () => {
   }, []);
 
   return (
-    <div className=" font-bebas flex flex-col items-center bg-orange-50 p-8 mb-4">
-      <div className="text-center mt-8">
+    <div className="relative font-bebas flex flex-col items-center bg-orange-50 p-8 mb-16">
+      <div className="text-center mt-8 z-10">
         <div className="flex items-center">
           <div>
             <img src={shellImg} alt="Logo 3" className="w-[14rem]" />
@@ -43,7 +41,18 @@ const FlavourVerse = () => {
         </p>
       </div>
 
-      <div>
+      <div className="absolute -top-0 left-0 w-[50rem] h-[40rem]">
+            <img src={leftCircle} alt="circle"  className="w-full h-full"/>
+        </div>
+        
+
+      <div className="relative">
+        <div className="absolute -top-4 -left-64">
+            <img src={leftCircle} alt="circle" />
+        </div>
+        <div className="absolute -bottom-[17rem] -right-64">
+            <img src={rightCircle} alt="circle" />
+        </div>
         <div className="relative mt-32">
           <img src={ellipse} className="w-[52rem]" />
 
@@ -62,7 +71,7 @@ const FlavourVerse = () => {
 
           <div className="absolute top-[-5rem] left-[24rem]">
             <div className="relative">
-              <div className="w-52 h-28">
+              <div className="w-52 h-32">
                 <img
                   src={data?.[0]?.image}
                   className="w-full h-full rounded-full flex flex-col items-center"
@@ -78,7 +87,7 @@ const FlavourVerse = () => {
           </div>
           <div className="absolute top-[10rem] right-[-6rem]">
             <div className="relative">
-              <div className="w-52 h-28">
+              <div className="w-52 h-32">
                 <img
                   src={data?.[1].image}
                   className="w-full h-full rounded-full"
@@ -95,7 +104,7 @@ const FlavourVerse = () => {
 
           <div className="absolute bottom-[10rem] right-[-4rem] ">
             <div className="relative">
-              <div className="w-52 h-28">
+              <div className="w-52 h-32">
                 <img
                   src={data?.[2].image}
                   className="w-full h-full rounded-full"
@@ -112,7 +121,7 @@ const FlavourVerse = () => {
 
           <div className="absolute bottom-[-4rem] left-[18rem]">
             <div className="relative">
-              <div className="w-52 h-28">
+              <div className="w-52 h-32">
                 <img
                   src={data?.[3]?.image}
                   className=" w-full h-full rounded-full"
@@ -129,7 +138,7 @@ const FlavourVerse = () => {
 
           <div className="absolute bottom-[15rem] left-[-5rem] ">
             <div className="relative">
-              <div className="w-52 h-28">
+              <div className="w-52 h-32">
                 <img
                   src={data?.[4]?.image}
                   className="w-full h-full rounded-full"
@@ -146,7 +155,7 @@ const FlavourVerse = () => {
 
           <div className="absolute top-[3rem] left-[-1rem]">
             <div className="relative">
-              <div className="w-52 h-28">
+              <div className="w-52 h-32">
                 <img
                   src={data?.[5]?.image}
                   className=" w-full h-full rounded-full"
