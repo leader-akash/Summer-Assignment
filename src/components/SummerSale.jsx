@@ -57,31 +57,31 @@ const SummerPrepSale = () => {
 
         <div className="relative text-black -mt-20 md:-mt-52">
           <div className=" relative z-50">
-            <div className="flex justify-center md:ml-64 items-center space-x-2">
+            <div className="flex justify-center md:ml-64 items-center space-x-10">
               <div className="size-14 object-contain">
                 <img src={icons} alt="icons" className="size-full" />
               </div>
-              <p className="text-xl md:text-2xl font-medium w-[390px] ">
+              <p className="text-xl md:text-4xl font-medium w-[390px] ">
                 TARGET YOUR TASTE BUDS,{" "}
                 <span className="block"> WHILE WE BALANCE THE MACROS </span>
               </p>
             </div>
 
-            <div className="flex justify-center mt-10 md:mt-24 md:mr-20 items-center space-x-2">
+            <div className="flex justify-center mt-10 md:mt-24 md:mr-20 items-center space-x-10">
               <div className="size-14">
                 <img src={icons} alt="icons" className="size-full" />
               </div>
-              <p className="text-xl md:text-2xl font-medium w-[390px] ">
+              <p className="text-xl md:text-4xl  w-[390px] ">
                 FRESH MEALS AS LOW AS{" "}
                 <span className="block text-[#00B67A]">$5.90 EACH</span>
               </p>
             </div>
 
-            <div className="flex justify-center md:justify-normal mt-10 md:mt-24 md:ml-72 items-center space-x-2">
+            <div className="flex justify-center md:justify-normal mt-10 md:mt-24 md:ml-72 items-center space-x-10">
               <div className="size-14 ">
                 <img src={icons} alt="icons" className="size-full" />
               </div>
-              <p className="text-xl md:text-2xl font-medium w-[390px] ">
+              <p className="text-xl md:text-4xl font-medium w-[390px] ">
                 ACHIEVE SUMMER BODY GOALS{" "}
                 <span className="block text-[#00B67A]">THE DELICIOUS WAY</span>
               </p>

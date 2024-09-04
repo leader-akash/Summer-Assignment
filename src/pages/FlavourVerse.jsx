@@ -6,6 +6,7 @@ import ellipse from "../assets/Ellipse.png";
 import group from "../assets/box35.png";
 import leftCircle from "../assets/leftCircle.png";
 import rightCircle from "../assets/rightCircle.png";
+import icons from "../assets/icons.png";
 
 const FlavourVerse = () => {
   const [data, setData] = useState();
@@ -42,16 +43,15 @@ const FlavourVerse = () => {
       </div>
 
       <div className="absolute -top-0 left-0 w-[50rem] h-[40rem]">
-            <img src={leftCircle} alt="circle"  className="w-full h-full"/>
-        </div>
-        
+        <img src={leftCircle} alt="circle" className="w-full h-full" />
+      </div>
 
       <div className="relative">
         <div className="absolute -top-4 -left-64">
-            <img src={leftCircle} alt="circle" />
+          <img src={leftCircle} alt="circle" />
         </div>
         <div className="absolute -bottom-[17rem] -right-64">
-            <img src={rightCircle} alt="circle" />
+          <img src={rightCircle} alt="circle" />
         </div>
         <div className="relative mt-32">
           <img src={ellipse} className="w-[52rem]" />
@@ -170,6 +170,24 @@ const FlavourVerse = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="flex justify-center !ml-10 mt-32 z-20">
+        {Array.from({ length: 3 }).map((_, index) => (
+          <div
+            key={index}
+            className="flex justify-center md:justify-normal  space-x-4"
+          >
+            <div className="size-14 ">
+              <img src={icons} alt="icons" className="size-full" />
+            </div>
+            <div className="text-xl md:text-4xl font-extralight w-[390px] ">
+              BEACH BODY FOOD TO{" "}
+              <span className="block">HELP YOU LOOK YOUR</span>
+              <span className="block">BEST</span>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
