@@ -25,7 +25,7 @@ const FlavourVerse = () => {
   }, []);
 
   return (
-    <div className="relative font-bebas flex flex-col items-center bg-orange-50 p-8 mb-16">
+    <div className="relative font-bebas flex flex-col items-center p-8 mb-16">
       <div className="text-center mt-8 z-10">
         <div className="flex items-center">
           <div>
