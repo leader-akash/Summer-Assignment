@@ -1,7 +1,7 @@
 import './App.css'
 import Header from './components/Header'
-import SummerPrepSale from './components/SummerSale'
 import FlavourVerse from './pages/FlavourVerse'
+import SummerPrepSale from './pages/SummerSale'
 
 function App() {
 
@@ -9,7 +9,6 @@ function App() {
    <div className='overflow-hidden font-bebas'>
     <Header />
       <SummerPrepSale />
-      {/* <Flavour /> */}
     <FlavourVerse />
    </div> 
   )

@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'custom-bg': "url('./assets/bg-image.png')",
+        'custom-bg': "url('./assets/bg-image2.png')",
         'sand-bg': "url('./assets/sand.png')"
       },
       fontFamily: {

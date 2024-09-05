@@ -3,13 +3,15 @@
 @tailwind utilities;
 
 :root {
-
   background-color: #F7F4E8;
-
 }
 
-.bg-image{
-  background-image: url("./assets/bg-image.png");
+.bg-custom-image{
+  background-image: url("./assets/bg-image2.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  width: 100vw; 
 }
 
 body {

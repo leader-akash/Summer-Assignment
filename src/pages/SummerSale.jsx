@@ -13,6 +13,9 @@ import fLogo4 from "../assets/fLogo4.png";
 import fLogo5 from "../assets/fLogo5.png";
 import fLogo6 from "../assets/fLogo6.png";
 import arrow from "../assets/Vector.svg";
+import footerUp from "../assets/footer-up.png";
+import footerDown from "../assets/footer-down.png";
+
 
 
 const SummerPrepSale = () => {
@@ -20,38 +23,35 @@ const SummerPrepSale = () => {
 
   return (
     <div>
-      <div className="min-h-screen bg-custom-bg bg-no-repeat h-full">
-        <div className="flex justify-between">
-          <div className="ml-10 md:ml-20 md:mt-24 py-8 text-[#2E3A45]">
+      <div className="min-h-screen  h-full bg-custom-image">
+        <div className="flex justify-between ">
+          <div className="ml-10 md:ml-[84px] md:mt-[90px] py-8 text-[#2E3A45]">
             <h1 className="text-2xl md:text-[112px]   text-[50px]">
               <span className="text-[#F54400]">SUMMER</span> PREP SALE!
             </h1>
-            <p className="text-lg md:text-[90px] font-medium mt-12 flex items-center">
+            <p className="text-lg md:text-[90px] font-medium mt-11 flex items-center">
               GET
-              <span className=" rounded-xl py-8 px-5  mx-2  text-white bg-green-700 ">
+              <span className=" rounded-xl py-9 px-5  mx-2  text-white bg-[#1F7318] ">
                 {" "}
                 40%{" "}
               </span>{" "}
               OFF YOUR
-              <span className="rounded-2xl bg-orange-500 ml-2 text-sm md:text-[42px] text-white py-6 px-3">
-                 <span className="font-semibold">1ST</span> ORDER
+              <span className="rounded-2xl bg-orange-500 ml-2 text-sm md:text-[42px] text-white py-6 px-4">
+                <span className="font-semibold">1ST</span> ORDER
               </span>
             </p>
             <button className="bg-[#FE4700] flex space-x-2 items-center text-base md:text-[36px] text-white py-4 px-4 mt-6 rounded">
-                <p>
-              CHOOSE MY MEALS
-                </p>
-                <div>
-                    <img src={arrow} alt="arrow"/>
-                </div>
+              <p>CHOOSE MY MEALS</p>
+              <div>
+                <img src={arrow} alt="arrow" />
+              </div>
             </button>
           </div>
-        
         </div>
 
         <div className="">
-          <div className="-mt-40 opacity-25 lg:opacity-100">
-            <img src={item} alt="items" />
+          <div className="-mt-36 size-[800px] opacity-25 lg:opacity-100">
+            <img src={item} alt="items" className="size-full" />
           </div>
         </div>
 
@@ -88,12 +88,12 @@ const SummerPrepSale = () => {
             </div>
           </div>
 
-          <div className="absolute -top-40 xl:-right-16 z-0 opacity-25 lg:opacity-100">
+          <div className="absolute -top-40 md:-right-16 z-0 opacity-25 lg:opacity-100">
             <img src={item2} alt="item" />
           </div>
         </div>
 
-        <div className="-mt-8 md:mr-0  xl:mr-16 flex justify-center opacity-25 lg:opacity-100">
+        <div className="-mt-8 md:mr-0  md:mr-16 flex justify-center opacity-25 lg:opacity-100">
           <div>
             <img src={item3} alt="item" />
           </div>
@@ -101,27 +101,39 @@ const SummerPrepSale = () => {
       </div>
 
       <div className="relative -mt-28 z-0">
-        <div >
-          <img src={beach} alt="beach" className="opacity-20 md:opacity-100"/>
+        <div className="w-[100vw]">
+          <img
+            src={beach}
+            alt="beach"
+            className="w-full opacity-20 md:opacity-100"
+          />
         </div>
         <div className="absolute -top-[310px] left-16">
           <img src={beachChair} alt="beachChair" />
         </div>
-        <div className="absolute -top-8 left-[400px]">
-          <img src={chicken} alt="chicken" />
+        <div className="absolute -top-8 left-[400px] z-20">
+          <img src={chicken} alt="chicken" className="relative z-20" />
+        </div>
+      </div>
+      <div className="relative h-[120px] flex items-center bg-[#FD8C07] justify-center">
+        <div className="z-50  flex justify-center">
+          {footerLogos.map((el) => {
+            return (
+              <div key={el} className="">
+                <img key={el} src={el} alt={el} />
+              </div>
+            );
+          })}
+        </div>
+        <div className="absolute hidden lg:block lg:-top-16 xl:-top-[5rem] 2xl:-top-[6rem] w-[100vw] z-100">
+          <img src={footerUp} alt="footer" className="w-full"/>
+        </div>
+        <div className="absolute hidden lg:block lg:-bottom-10   xl:-bottom-[3rem] 2xl:-bottom-[4rem] w-[100vw] ">
+          <img src={footerDown} alt="footer" className="w-full"/>
+
         </div>
       </div>
 
-      <div className=" hidden md:visible md:flex relative justify-center">
-        <div className=" -mt-24 z-10">
-          <img src={footerImg} alt="footer" className="z-50" />
-        </div>
-        <div className=" absolute -top-32 md:-top-24 lg:-top-20 xl:-top-10 z-50 flex justify-center">
-          {footerLogos.map((el) => (
-            <img key={el} src={el} alt={el} />
-          ))}
-        </div>
-      </div>
     </div>
   );
 };
